@@ -1,0 +1,27 @@
+2026-11-19 00:13:31 user=gabri action=provision-audit-enabled host=citizentech-srv
+2026-11-19T00:08:24.636308-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:09:26.456237-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:09:26.456386-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/systemctl disable --now auditd
+2026-11-19T00:09:27.236274-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:09:27.242442-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:09:27.242520-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/systemctl reset-failed
+2026-11-19T00:09:27.247551-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:10:11.476461-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:10:11.476661-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:11:00.528005-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:11:00.529688-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/home/gabri/citizentech-infra/provision/01b-audit.sh 
+2026-11-19T00:11:00.555165-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:12:02.003259-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:12:02.003399-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/rm -f /etc/sudoers.d/citizentech-audit
+2026-11-19T00:12:02.005111-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:13:17.035132-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:13:17.035279-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/whoami 
+2026-11-19T00:13:17.039046-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T00:13:31.504174-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T00:13:31.504365-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/home/gabri/citizentech-infra/provision/01b-audit.sh 
+2026-11-19 00:15:29 user=gabri action=app-deployed service=citizentech-app
+2026-11-19 01:05:40 user=gabri action=monitor-deployed service=infra-monitor
+2026-11-19 01:09:11 user=gabri action=failure-test-app-kill
+2026-11-19 01:09:18 user=gabri action=failure-test-app-stop
+2026-11-19 01:09:33 user=gabri action=failure-test-monitor-kill
+2026-11-19 01:09:42 user=gabri action=failure-test-cpu-stress

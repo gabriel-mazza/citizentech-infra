@@ -1,0 +1,17 @@
+2026-11-19 01:09:11 [TESTE] === TESTE 1: derrubando a aplicacao com SIGKILL ===
+2026-11-19 01:09:12 [TESTE] Estado logo apos a falha: activating
+2026-11-19 01:09:18 [TESTE] Estado apos recuperacao: active
+2026-11-19 01:09:18 [TESTE] RESULTADO: app voltou sozinha e responde em /health
+2026-11-19 01:09:18 [TESTE] === TESTE 2: app parada por 12s para o monitor detectar ===
+2026-11-19 01:09:30 [TESTE] Alertas do monitor:
+2026-11-19 01:09:19 [ALERTA] Aplicacao fora do ar (http://localhost:8080/health)
+2026-11-19 01:09:30 [ALERTA] Aplicacao fora do ar (http://localhost:8080/health)
+2026-11-19 01:09:33 [TESTE] App restaurada: active
+2026-11-19 01:09:33 [TESTE] === TESTE 3: derrubando o proprio monitor com SIGKILL ===
+2026-11-19 01:09:34 [TESTE] Estado logo apos a falha: activating
+2026-11-19 01:09:42 [TESTE] Estado apos recuperacao: active
+2026-11-19 01:09:42 [TESTE] === TESTE 4: estresse de CPU por 30s (deve gerar ALERTA) ===
+2026-11-19 01:10:15 [TESTE] Alertas de CPU:
+2026-11-19 01:09:50 [ALERTA] CPU em 99% (limite 80%)
+2026-11-19 01:10:01 [ALERTA] CPU em 99% (limite 80%)
+2026-11-19 01:10:15 [TESTE] === FIM DOS TESTES (log em /var/log/failure-test.log) ===

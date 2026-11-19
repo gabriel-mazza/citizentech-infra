@@ -1,0 +1,5 @@
+2026-11-19 01:05:36 [MON] Instalando monitor em /usr/local/bin
+2026-11-19 01:05:36 [MON] Criando servico systemd
+Created symlink '/etc/systemd/system/multi-user.target.wants/infra-monitor.service' → '/etc/systemd/system/infra-monitor.service'.
+2026-11-19 01:05:40 [MON] Estado do servico: active
+2026-11-19 01:05:40 [MON] Monitoramento OK
