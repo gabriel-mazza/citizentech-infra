@@ -1,0 +1,44 @@
+● citizentech-app.service - CitizenTech Web App
+     Loaded: loaded (/etc/systemd/system/citizentech-app.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-11-19 01:09:31 -03; 5min ago
+ Invocation: c523d4fa705e4caa80d506979fd1363d
+   Main PID: 14921 (python3)
+      Tasks: 1 (limit: 4598)
+     Memory: 9.6M (peak: 9.9M)
+        CPU: 115ms
+     CGroup: /system.slice/citizentech-app.service
+             └─14921 /usr/bin/python3 /opt/citizentech/app.py
+
+Nov 19 01:13:09 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:13:09] "GET /health HTTP/1.1" 200 -
+Nov 19 01:13:21 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:13:21] "GET /health HTTP/1.1" 200 -
+Nov 19 01:13:32 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:13:32] "GET /health HTTP/1.1" 200 -
+Nov 19 01:13:43 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:13:43] "GET /health HTTP/1.1" 200 -
+Nov 19 01:13:54 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:13:54] "GET /health HTTP/1.1" 200 -
+Nov 19 01:14:05 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:14:05] "GET /health HTTP/1.1" 200 -
+Nov 19 01:14:16 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:14:16] "GET /health HTTP/1.1" 200 -
+Nov 19 01:14:27 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:14:27] "GET /health HTTP/1.1" 200 -
+Nov 19 01:14:38 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:14:38] "GET /health HTTP/1.1" 200 -
+Nov 19 01:14:49 citizentech-srv python3[14921]: 127.0.0.1 - - [19/Nov/2026 01:14:49] "GET /health HTTP/1.1" 200 -
+
+● infra-monitor.service - Monitoramento de infraestrutura (CPU, memoria, disco)
+     Loaded: loaded (/etc/systemd/system/infra-monitor.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2026-11-19 01:09:38 -03; 5min ago
+ Invocation: 3029319e090f43f3ab5bcd7d4622e20d
+   Main PID: 14939 (bash)
+      Tasks: 2 (limit: 4598)
+     Memory: 30.6M (peak: 33.5M)
+        CPU: 2.236s
+     CGroup: /system.slice/infra-monitor.service
+             ├─14939 bash /usr/local/bin/infra-monitor.sh
+             └─15948 sleep 10
+
+Nov 19 01:14:16 citizentech-srv infra-monitor.sh[15836]: 2026-11-19 01:14:16 [INFO] DISCO 1%
+Nov 19 01:14:27 citizentech-srv infra-monitor.sh[15860]: 2026-11-19 01:14:27 [INFO] CPU 0%
+Nov 19 01:14:27 citizentech-srv infra-monitor.sh[15864]: 2026-11-19 01:14:27 [INFO] MEMORIA 13%
+Nov 19 01:14:27 citizentech-srv infra-monitor.sh[15868]: 2026-11-19 01:14:27 [INFO] DISCO 1%
+Nov 19 01:14:38 citizentech-srv infra-monitor.sh[15915]: 2026-11-19 01:14:38 [INFO] CPU 0%
+Nov 19 01:14:38 citizentech-srv infra-monitor.sh[15919]: 2026-11-19 01:14:38 [INFO] MEMORIA 13%
+Nov 19 01:14:38 citizentech-srv infra-monitor.sh[15923]: 2026-11-19 01:14:38 [INFO] DISCO 1%
+Nov 19 01:14:49 citizentech-srv infra-monitor.sh[15937]: 2026-11-19 01:14:49 [INFO] CPU 0%
+Nov 19 01:14:49 citizentech-srv infra-monitor.sh[15941]: 2026-11-19 01:14:49 [INFO] MEMORIA 13%
+Nov 19 01:14:49 citizentech-srv infra-monitor.sh[15945]: 2026-11-19 01:14:49 [INFO] DISCO 1%

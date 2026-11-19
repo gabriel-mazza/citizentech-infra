@@ -1,0 +1,13 @@
+[Unit]
+Description=CitizenTech Web App
+After=network.target
+
+[Service]
+User=citizentech
+EnvironmentFile=/etc/citizentech/env
+ExecStart=/usr/bin/python3 /opt/citizentech/app.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

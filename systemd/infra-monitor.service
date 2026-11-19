@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitoramento de infraestrutura (CPU, memoria, disco)
+After=network.target citizentech-app.service
+StartLimitIntervalSec=0
+
+[Service]
+ExecStart=/usr/local/bin/infra-monitor.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

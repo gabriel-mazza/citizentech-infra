@@ -2,7 +2,7 @@
 
 Infraestrutura Linux provisionada de forma automatica por Shell Script para hospedar uma aplicacao web CitizenTech (Deslocai), com monitoramento, auditoria e teste de falha.
 
-**Integrantes:** (preencher nomes e RMs)
+**Integrantes:** Gabriel Barros Mazzariol - RM 555410, Jefferson Junior Alvarez Urbina - RM 558497
 **Ambiente:** Ubuntu no WSL2 com systemd habilitado.
 
 ## Estrutura
