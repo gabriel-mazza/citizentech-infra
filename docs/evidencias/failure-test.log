@@ -15,3 +15,7 @@
 2026-11-19 01:09:50 [ALERTA] CPU em 99% (limite 80%)
 2026-11-19 01:10:01 [ALERTA] CPU em 99% (limite 80%)
 2026-11-19 01:10:15 [TESTE] === FIM DOS TESTES (log em /var/log/failure-test.log) ===
+2026-11-19 01:26:26 [TESTE-SCRIPT] Executando script com falha proposital
+2026-11-19 01:26:26 [TESTE-SCRIPT] Script falhou com codigo 1. Erro capturado: cat: /arquivo/que/nao/existe: No such file or directory 
+2026-11-19 01:26:26 [TESTE-SCRIPT] RESULTADO: erro registrado no log de auditoria (/var/log/citizentech-audit.log)
+2026-11-19 01:26:26 user=gabri action=script-failure code=1 error=cat: /arquivo/que/nao/existe: No such file or directory 

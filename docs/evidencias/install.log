@@ -1,0 +1,62 @@
+2026-11-19 01:24:55 [INSTALL] Iniciando provisionamento
+2026-11-19 01:24:55 [INSTALL] systemd ativo
+2026-11-19 01:24:55 [INSTALL] Executando provision/01-infra.sh
+2026-11-19 01:24:55 [INFRA] Definindo hostname: citizentech-srv
+2026-11-19 01:24:55 [INFRA] Configurando DNS
+2026-11-19 01:24:55 [INFRA] Instalando pacotes base
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.18.0-1ubuntu2.8).
+net-tools is already the newest version (2.10-2ubuntu1).
+ufw is already the newest version (0.36.2-9build1).
+auditd is already the newest version (1:4.1.2-1ubuntu0.1).
+stress-ng is already the newest version (0.20.01-1).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.
+2026-11-19 01:25:00 [INFRA] Criando usuario de servico
+2026-11-19 01:25:01 [INFRA] Configurando regras de auditoria
+/usr/sbin/augenrules: No change
+2026-11-19 01:25:01 [INFRA] AVISO: auditd limitado no WSL, usando logs proprios
+2026-11-19 01:25:01 [INFRA] Firewall: liberando porta 8080 (regra registrada)
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+2026-11-19 01:25:01 [INFRA] Resumo de rede:
+2026-11-19 01:25:01 [INFRA]   hostname: citizentech-srv
+2026-11-19 01:25:01 [INFRA]   ip: 172.26.247.169 
+2026-11-19 01:25:01 [INFRA]   dns: nameserver 172.26.240.1 nameserver 1.1.1.1 
+2026-11-19 01:25:01 [INFRA] Infra OK
+2026-11-19 01:25:01 [INSTALL] Executando provision/01b-audit.sh
+2026-11-19 01:25:01 [AUDIT] Executado por: gabri
+2026-11-19 01:25:01 [AUDIT] Criando log central de auditoria
+2026-11-19 01:25:01 [AUDIT] Exportando eventos de sudo (quem executou o que)
+2026-11-19 01:25:01 [AUDIT] Auditoria OK (central: /var/log/citizentech-audit.log | execucao: /var/log/provision/)
+2026-11-19 01:25:01 [INSTALL] Executando provision/02-app.sh
+2026-11-19 01:25:01 [APP] Instalando dependencias
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3 is already the newest version (3.14.3-0ubuntu2).
+curl is already the newest version (8.18.0-1ubuntu2.8).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.
+2026-11-19 01:25:01 [APP] Criando aplicacao em /opt/citizentech
+2026-11-19 01:25:02 [APP] Configurando variaveis de ambiente
+2026-11-19 01:25:02 [APP] Criando servico systemd
+2026-11-19 01:25:04 [APP] App respondendo em http://localhost:8080
+2026-11-19 01:25:04 [APP] Aplicacao OK
+2026-11-19 01:25:04 [INSTALL] Executando provision/03-monitoring.sh
+2026-11-19 01:25:04 [MON] Instalando monitor em /usr/local/bin
+2026-11-19 01:25:04 [MON] Criando servico systemd
+2026-11-19 01:25:08 [MON] Estado do servico: active
+2026-11-19 01:25:08 [MON] Monitoramento OK
+2026-11-19 01:25:08 [INSTALL] Validando ambiente
+2026-11-19 01:25:08 [INSTALL] Aplicacao: OK
+2026-11-19 01:25:08 [INSTALL] Servico citizentech-app: active (habilitado: enabled)
+2026-11-19 01:25:08 [INSTALL] Servico infra-monitor: active (habilitado: enabled)
+2026-11-19 01:25:08 [INSTALL] Provisionamento concluido com sucesso

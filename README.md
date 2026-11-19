@@ -62,3 +62,20 @@ Resultado completo em docs/evidencias/failure-test.log.
 ## Limitacoes do ambiente (WSL2)
 
 O IP e gerenciado pelo Windows (NAT) e o hostname/DNS sao configurados via /etc/hostname, /etc/hosts e /etc/resolv.conf. O resumo de rede fica registrado em docs/evidencias/01-infra.log.
+
+## Instalacao automatizada (um comando)
+
+    sudo ./install.sh
+
+O install.sh habilita o systemd (se necessario no WSL), executa os scripts de provisionamento em ordem (infra, auditoria, aplicacao, monitoramento), valida a aplicacao e os servicos, e registra tudo em /var/log/provision/install.log. Qualquer erro e gravado em /var/log/citizentech-audit.log (trap ERR).
+
+## Testes adicionais
+
+    sudo ./tests/failure-test.sh           # falhas de servicos e estresse de CPU
+    sudo ./tests/script-failure-test.sh    # falha controlada em script, erro registrado no log de auditoria
+    ./tests/reboot-check.sh                # apos wsl --shutdown: servicos sobem sozinhos (systemd enabled)
+
+## Evidencias
+
+- Logs de execucao e alertas: docs/evidencias/*.log
+- Capturas de tela: docs/evidencias/prints/

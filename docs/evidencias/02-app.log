@@ -14,3 +14,16 @@ Solving dependencies...
 Created symlink '/etc/systemd/system/multi-user.target.wants/citizentech-app.service' → '/etc/systemd/system/citizentech-app.service'.
 2026-11-19 00:15:29 [APP] App respondendo em http://localhost:8080
 2026-11-19 00:15:29 [APP] Aplicacao OK
+2026-11-19 01:25:01 [APP] Instalando dependencias
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3 is already the newest version (3.14.3-0ubuntu2).
+curl is already the newest version (8.18.0-1ubuntu2.8).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.
+2026-11-19 01:25:01 [APP] Criando aplicacao em /opt/citizentech
+2026-11-19 01:25:02 [APP] Configurando variaveis de ambiente
+2026-11-19 01:25:02 [APP] Criando servico systemd
+2026-11-19 01:25:04 [APP] App respondendo em http://localhost:8080
+2026-11-19 01:25:04 [APP] Aplicacao OK

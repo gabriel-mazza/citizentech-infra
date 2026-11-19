@@ -25,3 +25,28 @@
 2026-11-19 01:09:18 user=gabri action=failure-test-app-stop
 2026-11-19 01:09:33 user=gabri action=failure-test-monitor-kill
 2026-11-19 01:09:42 user=gabri action=failure-test-cpu-stress
+2026-11-19 01:25:01 user=gabri action=provision-audit-enabled host=citizentech-srv
+2026-11-19T01:05:36.405993-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:05:36.408912-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/home/gabri/citizentech-infra/provision/03-monitoring.sh 
+2026-11-19T01:05:40.083785-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T01:09:11.895570-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:09:11.899403-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/home/gabri/citizentech-infra/tests/failure-test.sh 
+2026-11-19T01:10:15.271967-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T01:11:26.637945-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:11:26.640375-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/cp /var/log/provision/01-infra.log /var/log/provision/01b-audit.log /var/log/provision/02-app.log /var/log/provision/03-monitoring.log /var/log/infra-monitor.log /var/log/failure-test.log /var/log/citizentech-audit.log docs/evidencias/
+2026-11-19T01:11:26.644165-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T01:11:35.564195-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:11:35.564429-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/cp /var/log/provision/01-infra.log /var/log/provision/01b-audit.log /var/log/provision/02-app.log /var/log/provision/03-monitoring.log /var/log/infra-monitor.log /var/log/failure-test.log /var/log/citizentech-audit.log docs/evidencias/
+2026-11-19T01:11:35.567098-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T01:13:42.201053-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:13:42.201595-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/cp /var/log/provision/01-infra.log /var/log/provision/01b-audit.log /var/log/provision/02-app.log /var/log/provision/03-monitoring.log /var/log/infra-monitor.log /var/log/failure-test.log /var/log/citizentech-audit.log docs/evidencias/
+2026-11-19T01:13:42.213902-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T01:14:07.307871-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:14:07.309798-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/usr/bin/chown -R gabri: /home/gabri/citizentech-infra
+2026-11-19T01:14:07.313435-03:00 citizentech sudo: pam_unix(sudo:session): session closed for user root
+2026-11-19T01:24:55.424879-03:00 citizentech sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+2026-11-19T01:24:55.429328-03:00 citizentech sudo: gabri : TTY=/dev/pts/2 ; PWD=/home/gabri/citizentech-infra ; USER=root ; COMMAND=/home/gabri/citizentech-infra/install.sh 
+2026-11-19 01:25:04 user=gabri action=app-deployed service=citizentech-app
+2026-11-19 01:25:08 user=gabri action=monitor-deployed service=infra-monitor
+2026-11-19 01:25:08 user=gabri action=install-completed host=citizentech-srv
+2026-11-19 01:26:26 user=gabri action=script-failure code=1 error=cat: /arquivo/que/nao/existe: No such file or directory 

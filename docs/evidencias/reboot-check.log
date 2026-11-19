@@ -1,0 +1,9 @@
+=== Verificacao pos-reinicializacao (2026-11-19 01:30:32) ===
+Uptime: up 2 minutes
+citizentech-app -> ativo: active | habilitado: enabled
+infra-monitor -> ativo: active | habilitado: enabled
+Aplicacao responde em /health: OK
+Ultimos registros do monitor:
+2026-11-19 01:30:21 [INFO] CPU 0%
+2026-11-19 01:30:21 [INFO] MEMORIA 12%
+2026-11-19 01:30:21 [INFO] DISCO 1%

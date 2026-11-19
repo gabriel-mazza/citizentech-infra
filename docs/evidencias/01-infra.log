@@ -224,3 +224,33 @@ Rules updated (v6)
 2026-11-19 00:05:42 [INFRA]   ip: 172.26.247.169 
 2026-11-19 00:05:42 [INFRA]   dns: nameserver 172.26.240.1 nameserver 1.1.1.1 
 2026-11-19 00:05:42 [INFRA] Infra OK
+2026-11-19 01:24:55 [INFRA] Definindo hostname: citizentech-srv
+2026-11-19 01:24:55 [INFRA] Configurando DNS
+2026-11-19 01:24:55 [INFRA] Instalando pacotes base
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Hit:2 http://security.ubuntu.com/ubuntu resolute-security InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.18.0-1ubuntu2.8).
+net-tools is already the newest version (2.10-2ubuntu1).
+ufw is already the newest version (0.36.2-9build1).
+auditd is already the newest version (1:4.1.2-1ubuntu0.1).
+stress-ng is already the newest version (0.20.01-1).
+Solving dependencies...
+0 upgraded, 0 newly installed, 0 to remove and 38 not upgraded.
+2026-11-19 01:25:00 [INFRA] Criando usuario de servico
+2026-11-19 01:25:01 [INFRA] Configurando regras de auditoria
+/usr/sbin/augenrules: No change
+2026-11-19 01:25:01 [INFRA] AVISO: auditd limitado no WSL, usando logs proprios
+2026-11-19 01:25:01 [INFRA] Firewall: liberando porta 8080 (regra registrada)
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+2026-11-19 01:25:01 [INFRA] Resumo de rede:
+2026-11-19 01:25:01 [INFRA]   hostname: citizentech-srv
+2026-11-19 01:25:01 [INFRA]   ip: 172.26.247.169 
+2026-11-19 01:25:01 [INFRA]   dns: nameserver 172.26.240.1 nameserver 1.1.1.1 
+2026-11-19 01:25:01 [INFRA] Infra OK

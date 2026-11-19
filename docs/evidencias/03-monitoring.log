@@ -3,3 +3,7 @@
 Created symlink '/etc/systemd/system/multi-user.target.wants/infra-monitor.service' → '/etc/systemd/system/infra-monitor.service'.
 2026-11-19 01:05:40 [MON] Estado do servico: active
 2026-11-19 01:05:40 [MON] Monitoramento OK
+2026-11-19 01:25:04 [MON] Instalando monitor em /usr/local/bin
+2026-11-19 01:25:04 [MON] Criando servico systemd
+2026-11-19 01:25:08 [MON] Estado do servico: active
+2026-11-19 01:25:08 [MON] Monitoramento OK

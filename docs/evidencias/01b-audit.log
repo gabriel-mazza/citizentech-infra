@@ -8,3 +8,7 @@ visudo: invalid sudoers file
 2026-11-19 00:13:31 [AUDIT] Criando log central de auditoria
 2026-11-19 00:13:31 [AUDIT] Exportando eventos de sudo (quem executou o que)
 2026-11-19 00:13:31 [AUDIT] Auditoria OK (central: /var/log/citizentech-audit.log | execucao: /var/log/provision/)
+2026-11-19 01:25:01 [AUDIT] Executado por: gabri
+2026-11-19 01:25:01 [AUDIT] Criando log central de auditoria
+2026-11-19 01:25:01 [AUDIT] Exportando eventos de sudo (quem executou o que)
+2026-11-19 01:25:01 [AUDIT] Auditoria OK (central: /var/log/citizentech-audit.log | execucao: /var/log/provision/)
